@@ -1,0 +1,38 @@
+.social {
+  display: flex;
+  justify-content: center;
+}
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $primary-icon-color;
+
+  transition: color 250ms $timing-function, background-color 250ms $timing-function;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $white-text-color;
+  }
+}
+.social__icon {
+  fill: currentColor;
+}
+
+.social__link--whiteText {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: $white-text-color;
+
+  transition: background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}

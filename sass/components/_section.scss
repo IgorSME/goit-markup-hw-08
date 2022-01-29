@@ -1,0 +1,18 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &--noPaddingTop {
+    padding-top: 0;
+  }
+  &--teamBcg {
+    background-color: $primary-bcg-button;
+  }
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
