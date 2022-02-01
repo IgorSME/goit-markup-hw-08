@@ -933,6 +933,8 @@ ul {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-page__title {
     text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
   }
 }
 
@@ -967,6 +969,12 @@ ul {
 
 .address__item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-form {
+    text-align: center;
+  }
 }
 
 .footer-form__icon {
@@ -1033,6 +1041,13 @@ ul {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-form__input {
+    min-width: 450px;
+    margin-bottom: 20px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-form__input {
     margin-right: 12px;
@@ -1040,7 +1055,7 @@ ul {
   }
 }
 
-@media screen and (768px) and (1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-page__sign {
     margin: 0 auto;
   }
@@ -1073,6 +1088,12 @@ ul {
 
 .filter__item:first-child {
   margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter__item:first-child {
+    margin-bottom: 30px;
+  }
 }
 
 .filter__btn {
@@ -1119,6 +1140,15 @@ ul {
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .portfolio__item:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__item {
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
   }
 }
 
