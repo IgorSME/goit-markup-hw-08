@@ -1,9 +1,17 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &--noPaddingTop {
     padding-top: 0;
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
   }
   &--teamBcg {
     background-color: $primary-bcg-button;
@@ -11,8 +19,21 @@
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  outline: 1px solid tomato;
+
+  @media screen and (min-width: $mobile) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    width: 1200px;
+  }
 }

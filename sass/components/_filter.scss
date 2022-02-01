@@ -1,11 +1,25 @@
 .filter {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
+
+  @media screen and(min-width: $mobile) and(max-width:767px) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and(min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+  }
 }
-.filter__item:not(:last-child) {
-  margin-right: 8px;
+.filter__item {
+  display: inline-block;
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+  &:first-child {
+    margin-bottom: 15px;
+  }
 }
+
 .filter__btn {
   padding: 6px 22px;
   border-color: transparent;
