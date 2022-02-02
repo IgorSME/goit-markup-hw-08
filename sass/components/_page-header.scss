@@ -78,7 +78,7 @@
 }
 
 .auth-nav {
-  @media screen and(min-width: $mobile) and(max-width:767px) {
+  @media screen and(max-width:767px) {
     display: flex;
     flex-direction: column-reverse;
     margin-top: auto;
@@ -110,10 +110,10 @@
   &:focus {
     color: $accent-color;
   }
-  @media screen and(min-width:$mobile) and (max-width: 767px) {
-    &--bigFont {
-      margin-bottom: 64px;
-    }
+  &--bigFont {
+    margin-bottom: 64px;
+  }
+  @media screen and (max-width: 767px) {
     &--accentColor {
       font-size: 34px;
       line-height: 1.17;
@@ -136,7 +136,7 @@
 
 .social-nav {
   display: flex;
-  // flex-wrap: wrap;
+  flex-wrap: wrap;
 
   @media screen and(min-width: $tablet) {
     display: none;

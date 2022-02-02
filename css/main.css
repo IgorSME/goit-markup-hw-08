@@ -330,7 +330,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .auth-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -381,10 +381,11 @@ ul {
   color: #2196f3;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .auth-nav__link--bigFont {
-    margin-bottom: 64px;
-  }
+.auth-nav__link--bigFont {
+  margin-bottom: 64px;
+}
+
+@media screen and (max-width: 767px) {
   .auth-nav__link--accentColor {
     font-size: 34px;
     line-height: 1.17;
@@ -414,6 +415,8 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media screen and (min-width: 768px) {
@@ -494,7 +497,7 @@ ul {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  width: 360px;
+  max-width: 360px;
   color: #ffffff;
   font-weight: 900;
   font-size: 26px;
