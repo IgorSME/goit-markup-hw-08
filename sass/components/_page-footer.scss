@@ -29,6 +29,10 @@
     align-items: baseline;
     text-align: center;
   }
+  @media screen and(min-width:$desctop) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer-page__title {
@@ -79,7 +83,9 @@
   @media screen and(min-width: $tablet) and (max-width: 1199px) {
     text-align: center;
   }
-  // display: flex;
+  @media screen and(min-width:$desctop) {
+    display: flex;
+  }
 }
 .footer-form__icon {
   margin-left: 10px;
@@ -118,7 +124,7 @@
   @media screen and (min-width: $tablet) and(max-width:1199px) {
     margin: 0 auto;
   }
+  @media screen and(min-width:$desctop) {
+    margin-left: auto;
+  }
 }
-// .footer-page__sign {
-//   margin-left: auto;
-// }
