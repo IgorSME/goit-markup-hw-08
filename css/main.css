@@ -408,6 +408,9 @@ ul {
     font-size: 14px;
     line-height: 1.14;
   }
+  .auth-nav__link--bigFont {
+    margin-bottom: 0;
+  }
 }
 
 .social-nav {

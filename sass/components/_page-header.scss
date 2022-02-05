@@ -131,6 +131,9 @@
   @media screen and(min-width:$desctop) {
     font-size: 14px;
     line-height: 1.14;
+    &--bigFont {
+      margin-bottom: 0;
+    }
   }
 }
 
