@@ -14,7 +14,7 @@
         <div class="container page-header__container">
             <a href="/" class="logo" lang="en"> Web<span class="logo__dark">Studio</span></a>
             <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                <svg width="40" height="40">
+                <svg width="24" height="16">
                     <use href="./images/icons.svg#icon-menu_24px"></use>
                 </svg>
             </button>
@@ -40,7 +40,7 @@
                                 <use href="./images/icons.svg#icon-envelope"></use>
                             </svg>
                             info@devstudio.com</a></li>
-                    <li class="auth-nav__item"><a href="tel:+38 096 111 11 11" class="auth-nav__link auth-nav__link--accentColor">
+                    <li class="auth-nav__item"><a href="tel:+380961111111" class="auth-nav__link auth-nav__link--accentColor">
                             <svg class="auth-nav__icon" width="10" height="16">
                                 <use href="./images/icons.svg#icon-smartphone"></use>
                             </svg>
@@ -58,61 +58,64 @@
     <!-- Main section -->
     <main>
         <section class="hero">
-            <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="button" data-modal-open>Заказать услугу</button>
-            <div class="backdrop backdrop--is-hidden" data-modal>
-                <div class="modal">
-                    <button type="button" class="modal__btn" data-modal-close>
-                        <svg class="modal__close-btn" width="18" height="18">
-                            <use href="./images/icons.svg#icon-close-black"></use>
-                        </svg>
-                    </button>
-                    <form action="#" class="registration-form">
-                        <h2 class="registration-form__title">
-                            Оставьте свои данные, мы вам перезвоним
-                        </h2>
-                        <label class="registration-form__label">
-                            <span class="registration-form__name">Имя</span>
-                            <span class="registration-form__thumb">
-                                <input type="text" class="registration-form__input" name="name">
-                                <svg class="registration-form__icon" width="18" height="18">
-                                    <use href="./images/icons.svg#icon-person-black-18"></use>
-                                </svg>
-                            </span>
-                        
-                        </label>
-                        <label class="registration-form__label">
-                            <span class="registration-form__name">Телефон</span>
-                            <span class="registration-form__thumb">
-                                <input type="tel" class="registration-form__input" name="tel">
-                                <svg class="registration-form__icon" width="18" height="18">
-                                    <use href="./images/icons.svg#icon-phone-black"></use>
-                                </svg>
-                            </span>
-                        </label>
-                        <label class="registration-form__label">
-                            <span class="registration-form__name">Почта</span>
-                            <span class="registration-form__thumb">
-                                <input type="email" class="registration-form__input" name="email">
-                                <svg class="registration-form__icon" width="18" height="18">
-                                    <use href="./images/icons.svg#icon-email-black"></use>
-                                </svg>
-                            </span>
-                        </label>
-                        <label class="registration-form__comments" for="comments">
-                            <span class="registration-form__name">Комментарий</span>
-                            <textarea name="comments" class="registration-form__textarea" id="comments" placeholder="Введите текст"></textarea>
-                        </label>
-                        <label class="policy">
-                            <input type="checkbox" class="policy__check" name="policy">
-                            <svg class="policy__icon" width="16" height="15">
-                                <use href="./images/icons.svg#icon-agree"></use>
+            <div class="container">
+                <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+                <button type="button" class="button" data-modal-open>Заказать услугу</button>
+                <div class="backdrop backdrop--is-hidden" data-modal>
+                    <div class="modal">
+                        <button type="button" class="modal__btn" data-modal-close>
+                            <svg class="modal__close-btn" width="18" height="18">
+                                <use href="./images/icons.svg#icon-close-black"></use>
                             </svg>
-                            Соглашаюсь с рассылкой и принимаю&nbsp;
-                            <a href="" class="policy__link">Условия договора</a>
-                        </label>
-                        <button type="submit" class="button modal__send-button">Отправить</button>
-                    </form>
+                        </button>
+                        <form action="#" class="registration-form">
+                            <h2 class="registration-form__title">
+                                Оставьте свои данные, мы вам перезвоним
+                            </h2>
+                            <label class="registration-form__label">
+                                <span class="registration-form__name">Имя</span>
+                                <span class="registration-form__thumb">
+                                    <input type="text" class="registration-form__input" name="name">
+                                    <svg class="registration-form__icon" width="18" height="18">
+                                        <use href="./images/icons.svg#icon-person-black-18"></use>
+                                    </svg>
+                                </span>
+                
+                            </label>
+                            <label class="registration-form__label">
+                                <span class="registration-form__name">Телефон</span>
+                                <span class="registration-form__thumb">
+                                    <input type="tel" class="registration-form__input" name="tel">
+                                    <svg class="registration-form__icon" width="18" height="18">
+                                        <use href="./images/icons.svg#icon-phone-black"></use>
+                                    </svg>
+                                </span>
+                            </label>
+                            <label class="registration-form__label">
+                                <span class="registration-form__name">Почта</span>
+                                <span class="registration-form__thumb">
+                                    <input type="email" class="registration-form__input" name="email">
+                                    <svg class="registration-form__icon" width="18" height="18">
+                                        <use href="./images/icons.svg#icon-email-black"></use>
+                                    </svg>
+                                </span>
+                            </label>
+                            <label class="registration-form__comments" for="comments">
+                                <span class="registration-form__name">Комментарий</span>
+                                <textarea name="comments" class="registration-form__textarea" id="comments"
+                                    placeholder="Введите текст"></textarea>
+                            </label>
+                            <label class="policy">
+                                <input type="checkbox" class="policy__check" name="policy">
+                                <svg class="policy__icon" width="16" height="15">
+                                    <use href="./images/icons.svg#icon-agree"></use>
+                                </svg>
+                                Соглашаюсь с рассылкой и принимаю&nbsp;
+                                <a href="" class="policy__link">Условия договора</a>
+                            </label>
+                            <button type="submit" class="button modal__send-button">Отправить</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -204,7 +207,7 @@
                     <li class="team__item">
                         
                         <picture>
-                            <source srcset="./images/img.jpg 1x"
+                            <source srcset="./images/img.jpg 1x, ./images/img-2x.jpg 2x"
                             media="(min-width:1200px)">
                             <source srcset="./images/img-tab-1x-2.jpg 1x, ./images/img-tab-2x-2.jpg 2x" media="(min-width:768px)">
                             <source srcset="./images/img-mob-1x-2.jpg 1x, ./images/img-mob-2x-2.jpg 2x" media="(min-width:320px)">
@@ -482,6 +485,9 @@
             </div>
         </div>
     </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>

@@ -21,8 +21,10 @@
   &:focus {
     background-color: $button-hero-hover-color;
   }
-  @media screen and(max-width: 1199px) {
-    margin-left: auto;
-    margin-right: auto;
-  }
+  margin-left: auto;
+  margin-right: auto;
+  // @media screen and(max-width: 1199px) {
+  //   margin-left: auto;
+  //   margin-right: auto;
+  // }
 }
